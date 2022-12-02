@@ -61,6 +61,7 @@ body {
 }
 /* A elements that don't have a class get default styles */
 a:not([class]) {
+  -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
 }
 /* Make images easier to work with */
@@ -84,7 +85,9 @@ select {
   *,
   *::before,
   *::after {
+    -webkit-animation-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
@@ -136,6 +139,35 @@ p {
   width: calc(375px - 48px);
   margin: 0 auto 1.5em auto;
   border-radius: 15px;
+  align-items: center;
+}
+
+.card_plan-container > img {
+  width: 48px;
+  height: 48px;
+  margin-right: 1em;
+}
+
+.card_plan-container .card_plan-annual {
+  color: var(--clr-neutral-300);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-extra-bold);
+}
+
+.card_plan-container .card_plan-year {
+  color: var(--clr-neutral-200);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
+}
+
+.card_plan-wrapper {
+  width: 100%;
+}
+
+.card_plan-container a {
+  color: var(--clr-primary-200);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-bold);
 }
 
 button {
