@@ -124,7 +124,7 @@ h2 {
 }
 
 p {
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   text-align: center;
   margin: 0.75em 0 1.5em 0;
   font-weight: var(--fw-regular);
@@ -176,19 +176,30 @@ button {
   margin: 0 auto;
   border-radius: 10px;
   border: none;
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   padding: 1em;
   font-weight: var(--fw-bold);
+  cursor: pointer;
 }
 
 .card_cta-proceed {
   background-color: var(--clr-primary-200);
   color: white;
   margin-bottom: 1em;
+  border: 2px solid black;
+}
+
+.card_cta-proceed:hover {
+  background-color: rgb(0, 240, 0);
+  color: black;
 }
 
 .card_cta-cancel {
-  background-color: #ff0000;
-  color: white;
-  border: 1px solid red;
+  background-color: var(--clr-neutral-100);
+  color: black;
+  border: 2px solid black;
+}
+
+.card_cta-cancel:hover {
+  background-color: red;
 }
